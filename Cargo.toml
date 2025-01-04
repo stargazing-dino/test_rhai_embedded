@@ -1,0 +1,17 @@
+[package]
+name = "test_rhai_embedded"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+embedded-alloc = "0.6.0"
+panic-probe = { version = "0.3" }
+cortex-m-rt = "0.7.3"
+# rhai = { path = "../rhai", default-features = false, features = [
+#     "no_std",
+#     "sync",
+# ] }
+rhai = { version = "1.20.1", default-features = false, features = [
+    "no_std",
+    "sync",
+] }
