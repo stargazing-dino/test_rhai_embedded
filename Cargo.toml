@@ -13,5 +13,5 @@ cortex-m-rt = "0.7.3"
 # ] }
 rhai = { version = "1.20.1", default-features = false, features = [
     "no_std",
-    "sync",
+    "sync",   # To reproduce error comment this line
 ] }
